@@ -3,9 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Portfolio_ai</title>
+  <link rel="stylesheet" href="assets\css\index.css">
 </head>
 <body>
+  <nav class="navbar">
+    <div class="navbar-logo">
+      <img src="assets/images/logo2.png" alt="Logo">
+      <span>Portfolio_ai</span>
+    </div>
+    <div class="navbar-links" id="navbar-links">
+      <a href="#">Home</a>
+      <a href="#">Projects</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+  </nav>
+  <script>
+    const toggle = document.getElementById('navbar-toggle');
+    const links = document.getElementById('navbar-links');
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('active');
+    });
+  </script>
   
 </body>
 </html>
